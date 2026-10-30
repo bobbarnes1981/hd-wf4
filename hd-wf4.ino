@@ -25,8 +25,8 @@
 #define WF4_X1_B2_PIN   11
 
 // Port Selection Enable Pins (HD-WF4 uses these pins to switch between physical ports)
-//#define WF4_PORT_X1_EN  14
-#define WF4_PORT_X1_EN  45
+#define WF4_PORT_X3_X4_EN  14
+#define WF4_PORT_X1_X2_EN  45
 
 // Setup pin arrays for Protomatter constructor
 uint8_t rgbPins[] = {
@@ -55,8 +55,8 @@ void setup() {
   Serial.begin(115200);
 
   // CRITICAL STEP FOR HD-WF4: Set the hardware port output enable line high
-  pinMode(WF4_PORT_X1_EN, OUTPUT);
-  digitalWrite(WF4_PORT_X1_EN, HIGH);
+  pinMode(WF4_PORT_X1_X2_EN, OUTPUT);
+  digitalWrite(WF4_PORT_X1_X2_EN, HIGH);
 
   // Initialize the matrix
   ProtomatterStatus status = matrix.begin();
