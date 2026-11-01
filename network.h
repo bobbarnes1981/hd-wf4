@@ -5,4 +5,6 @@
 
 extern void network_setup();
 
+extern void network_loop();
+
 #endif

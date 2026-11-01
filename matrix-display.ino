@@ -12,6 +12,5 @@ void setup() {
 void loop() {
   debug_loop();
   display_loop();
-  
-  delay(100);
+  network_loop();
 }
