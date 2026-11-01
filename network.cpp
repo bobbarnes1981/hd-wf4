@@ -6,6 +6,7 @@
 WiFiManager wifiManager;
 
 void network_setup() {
+  WiFi.persistent(true);
   WiFi.setAutoReconnect(true);
   wifiManager.setConfigPortalBlocking(false);
   wifiManager.autoConnect(AP_NAME);
