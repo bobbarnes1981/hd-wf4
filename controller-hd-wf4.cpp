@@ -40,3 +40,11 @@ void controller_setup() {
   
   Serial.println("Matrix initialized successfully!");
 }
+
+void controller_setTime() {
+  // todo: store time in RTC
+}
+
+void controller_getTime() {
+  // todo: get time from RTC 
+}

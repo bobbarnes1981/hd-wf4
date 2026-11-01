@@ -13,4 +13,6 @@ void loop() {
   debug_loop();
   display_loop();
   network_loop();
+
+  // todo: when connected after wifi was disconnected, get ntp time using time.h
 }

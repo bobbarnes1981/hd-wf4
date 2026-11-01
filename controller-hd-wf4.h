@@ -40,4 +40,8 @@ extern Adafruit_Protomatter matrix;
 
 extern void controller_setup();
 
+extern void controller_setTime();
+
+extern void controller_getTime();
+
 #endif
