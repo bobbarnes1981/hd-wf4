@@ -11,15 +11,12 @@ void debug_setup() {
 
 void debug_loop() {
   unsigned long m = millis();
-  DEBUG_PORT.printf("tick... %d %d\n", m, elapsed);
-  if (m-elapsed > DEBUG_DELAY) {
+  if (m - elapsed > DEBUG_DELAY) {
     elapsed = m;
     DEBUG_PORT.println("tick...");
 
     DEBUG_PORT.printf("Stored SSID: %s\n", WiFi.SSID().c_str());
     DEBUG_PORT.printf("WiFi mode: %d\n", WiFi.getMode());
-
     DEBUG_PORT.printf("Connected: %s\n", WiFi.isConnected() ? "Yes" : "No");
-    DEBUG_PORT.printf("SSID: %s\n", WiFi.SSID().c_str());
   }
 }
