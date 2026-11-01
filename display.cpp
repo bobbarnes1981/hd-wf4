@@ -2,6 +2,15 @@
 
 #include <Adafruit_Protomatter.h>
 
+void display_setup() {
+  controller_setup();
+
+  matrix.setCursor(5, 12);
+  matrix.setTextColor(matrix.color565(0, 255, 0)); // Green text
+  matrix.print("WiFi");
+  matrix.show();
+}
+
 void display_loop() {
   // Clear the screen buffer
   matrix.fillScreen(matrix.color565(0, 0, 0));

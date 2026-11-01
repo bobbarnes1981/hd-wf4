@@ -13,7 +13,7 @@ extern uint8_t addrPins[] = {
 };
 
 // Initialize the Protomatter Matrix
-Adafruit_Protomatter matrix(
+extern Adafruit_Protomatter matrix(
   PANEL_WIDTH,          // Width of matrix grid
   BIT_DEPTH,            // Color bit depth
   1, rgbPins,           // Number of parallel matrices (usually 1), RGB pins array
@@ -25,7 +25,7 @@ Adafruit_Protomatter matrix(
   true                  // Enable double-buffering for smooth animation
 );
 
-void display_setup() {
+void controller_setup() {
   // CRITICAL STEP FOR HD-WF4: Set the hardware port output enable line high
   pinMode(WF4_PORT_X1_X2_EN, OUTPUT);
   digitalWrite(WF4_PORT_X1_X2_EN, HIGH);

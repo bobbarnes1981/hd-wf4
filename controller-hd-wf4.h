@@ -22,11 +22,11 @@
 
 // Port 1 (X1) Data Pins
 #define WF4_X1_R1_PIN   2
-#define WF4_X1_G1_PIN   6
-#define WF4_X1_B1_PIN   10
+#define WF4_X1_B1_PIN   6
+#define WF4_X1_G1_PIN   10
 #define WF4_X1_R2_PIN   3
-#define WF4_X1_G2_PIN   7
-#define WF4_X1_B2_PIN   11
+#define WF4_X1_B2_PIN   7
+#define WF4_X1_G2_PIN   11
 
 // Port Selection Enable Pins (HD-WF4 uses these pins to switch between physical ports)
 #define WF4_PORT_X1_X2_EN  45
@@ -38,6 +38,6 @@ extern uint8_t addrPins[];
 
 extern Adafruit_Protomatter matrix;
 
-extern void display_setup();
+extern void controller_setup();
 
 #endif
